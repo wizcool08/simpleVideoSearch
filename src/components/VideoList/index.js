@@ -8,8 +8,14 @@ const VideoList = ({ videos, onVideoSelect }) => {
     );
   });
 
-  return <div className="ui relaxed divided list"> {renderedVideoList} </div>;
+  return (
+    <div
+      className="ui relaxed divided list"
+      style={{ maxHeight: "550px", overflowY: "scroll" }}
+    >
+      {renderedVideoList}{" "}
+    </div>
+  );
 };
 
 export default VideoList;
-

@@ -13,7 +13,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.onSearchSubmit("basketball");
+    this.onSearchSubmit("周杰倫 Jay Chou");
   }
 
   onSearchSubmit = async searchValue => {
@@ -24,7 +24,7 @@ class App extends Component {
     });
     this.setState({
       videos: response.data.items,
-      selectedVideo: response.data.items[0]
+      selectedVideo: response.data.items[1]
     });
   };
 
@@ -40,7 +40,7 @@ class App extends Component {
         <div style={{ marginTop: "10px" }}>
           <h2 class="ui header">
             <i class="film icon" />
-            <div className="content">Search for your Favorite Video</div>
+            <div className="content">Wizcool Theatre</div>
           </h2>
         </div>
         <SearchBar onSubmit={this.onSearchSubmit} />
