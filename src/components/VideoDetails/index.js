@@ -3,7 +3,7 @@ import React from "react";
 const VideoDetails = ({ selectedVideo }) => {
   if (!selectedVideo) {
     return (
-      <div class="ui loading segment">
+      <div className="ui loading segment">
         <p />
         <p />
       </div>

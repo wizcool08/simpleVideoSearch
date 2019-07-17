@@ -38,8 +38,8 @@ class App extends Component {
     return (
       <div className="ui container">
         <div style={{ marginTop: "10px" }}>
-          <h2 class="ui header">
-            <i class="film icon" />
+          <h2 className="ui header">
+            <i className="film icon" />
             <div className="content">Wizcool Theatre</div>
           </h2>
         </div>
